@@ -25,7 +25,7 @@ wget https://swift.org/builds/swift-5.4.1-release/ubuntu2004/swift-5.4.1-RELEASE
 tar -zxvf swift-5.4.1-RELEASE-ubuntu20.04.tar.gz
 sudo mkdir /usr/bin/swift
 sudo cp -R ./swift-5.4.1-RELEASE-ubuntu20.04/usr/* /usr/bin/swift
-export PATH="${PATH}":/usr/bin/swift/bin
+echo 'export PATH="${PATH}":/usr/bin/swift/bin' >> ~/.bashrc
 
 # remove this directory and all its files
 echo remove this directory and all its files
