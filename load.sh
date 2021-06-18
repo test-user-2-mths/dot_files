@@ -14,7 +14,7 @@ cp ./.vimrc ~/.vimrc
 # load YouCompleteMe
 echo Load YouCompleteMe plugin for Vim
 sudo apt install vim-youcompleteme
-sudo vim-addon-manager install youcompleteme
+vim-addon-manager install youcompleteme
 
 # load programming software
 echo load Java
