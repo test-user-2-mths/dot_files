@@ -51,3 +51,7 @@ filetype off            " Helps force plugins to load correctly when it is turne
 
 " Add Vim native plugin support
 packloadall             " turn on Vim natice plugin support
+
+" Swift plugin
+map <C-I> :pyf ~/.vim/plugin/swift-format.py
+imap <C-I> <c-o>:pyf ~/.vim/plugin/swift-format.py
