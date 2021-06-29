@@ -17,6 +17,9 @@ sudo apt-get update && sudo apt-get dist-upgrade
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
 
+# just show the current directory on the command line
+echo 'PROMPT_DIRTRIM=1' >> ~/.bashrc
+
 # load YouCompleteMe
 echo Load YouCompleteMe plugin for Vim
 sudo apt install vim-youcompleteme
