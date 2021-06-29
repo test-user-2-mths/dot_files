@@ -38,6 +38,7 @@ echo 'export PATH="${PATH}":/usr/bin/swift/bin' >> ~/.bashrc
 
 # SwiftLint
 # https://github.com/realm/SwiftLint/releases
+echo load SwiftLint
 wget https://github.com/realm/SwiftLint/releases/download/0.43.1/swiftlint_linux.zip
 unzip -n swiftlint_linux.zip
 sudo mkdir /usr/bin/swiftlint
