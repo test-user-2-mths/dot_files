@@ -33,8 +33,10 @@ sudo apt install default-jdk
 # https://github.com/checkstyle/checkstyle/releases
 echo load CheckStyle
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
-sudo mkdir /usr/bin/checkstyle
-sudo cp ./checkstyle-8.44-all.jar /usr/bin/checkstyle/checkstyle
+sudo mkdir ~/java-style
+sudo cp ./checkstyle-8.44-all.jar ~/java-style/checkstyle.jar
+wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
+sudo cp ./google_checks.xml ~/java-style/
 
 
 # you might need to get a newer version of swift
