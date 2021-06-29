@@ -13,6 +13,10 @@
 echo Update and upgrade system
 sudo apt-get update && sudo apt-get dist-upgrade
 
+# load some programs
+echo Load tree program
+sudo apt install tree
+
 # load .vimrc file
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
