@@ -17,9 +17,6 @@ sudo apt-get update && sudo apt-get dist-upgrade
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
 
-# just show the current directory on the command line
-echo 'PROMPT_DIRTRIM=1' >> ~/.bashrc
-
 # load YouCompleteMe
 echo Load YouCompleteMe plugin for Vim
 sudo apt install vim-youcompleteme
@@ -71,6 +68,9 @@ cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
 echo "--- Cleaning up, removing swift repo.."
 rm -rf ./swift/
 
+# change some BASH settings
+echo 'PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '' >> ~/.bashrc
+echo 'PROMPT_DIRTRIM=1' >> ~/.bashrc
 
 # remove this directory and all its files
 echo remove this directory and all its files
