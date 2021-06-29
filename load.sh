@@ -77,6 +77,11 @@ echo adding some BASH commands to .bashrc
 echo "PS1='$\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> ~/.bashrc
 echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 
+# provision GitHub
+echo provision GitHub
+ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
+eval "$(ssh-agent -s)"
+
 # remove this directory and all its files
 echo remove this directory and all its files
 sudo rm -R ~/dot_files
