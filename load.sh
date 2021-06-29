@@ -2,6 +2,8 @@
 
 # you will need to change permissions on the file before you can run it
 # chmod +x ./load.sh
+# then run this (so you do not have to type "yes" 3 times while it is running):
+# yes yes yes | ./load.sh
 
 # update and upgrade system
 echo Update and upgrade system
@@ -55,3 +57,5 @@ rm -rf ./swift/
 # remove this directory and all its files
 echo remove this directory and all its files
 sudo rm -R ~/dot_files
+cd ..
+
