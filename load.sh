@@ -69,6 +69,7 @@ echo "--- Cleaning up, removing swift repo.."
 rm -rf ./swift/
 
 # change some BASH settings
+echo adding some BASH commands to .bashrc
 echo "PS1='$\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> ~/.bashrc
 echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 
