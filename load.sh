@@ -76,4 +76,4 @@ echo 'PROMPT_DIRTRIM=1' >> ~/.bashrc
 echo remove this directory and all its files
 sudo rm -R ~/dot_files
 cd ..
-
+sudo reboot now
