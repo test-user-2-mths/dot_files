@@ -29,6 +29,14 @@ vim-addon-manager install youcompleteme
 echo load Java
 sudo apt install default-jdk
 
+# loading checkstyle for java
+# https://github.com/checkstyle/checkstyle/releases
+echo load CheckStyle
+wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
+sudo mkdir /usr/bin/checkstyle
+sudo cp ./checkstyle-8.44-all.jar /usr/bin/checkstyle/checkstyle
+
+
 # you might need to get a newer version of swift
 # https://swift.org/download/
 echo load Swift
