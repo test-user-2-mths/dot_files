@@ -36,7 +36,7 @@ wget https://github.com/realm/SwiftLint/releases/download/0.43.1/swiftlint_linux
 unzip -n swiftlint_linux.zip
 sudo mkdir /usr/bin/swiftlint
 sudo cp ./swiftlint /usr/bin/swiftlint/
-export PATH="${PATH}":/usr/bin/swiftlint
+echo 'export PATH="${PATH}":/usr/bin/swiftlint' >> ~/.bashrc
 
 # Swift syntax highlighting for Vim
 # Original Source: http://wingsquare.com/blog/swift-script-syntax-highlighting-and-indentation-for-vim-text-editor/
