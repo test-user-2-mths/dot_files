@@ -50,7 +50,7 @@ set autoread            " autoreload the file in Vim if it has been changed outs
 filetype off            " Helps force plugins to load correctly when it is turned back on below
 
 " Add Vim native plugin support
-packloadall             " turn on Vim natice plugin support
+packloadall             " turn on Vim native plugin support
 
 " Swift plugin
 map <C-I> :pyf ~/.vim/plugin/swift-format.py
