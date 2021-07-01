@@ -48,6 +48,7 @@ wget https://swift.org/builds/swift-5.4.1-release/ubuntu2004/swift-5.4.1-RELEASE
 tar -zxvf swift-5.4.1-RELEASE-ubuntu20.04.tar.gz
 sudo mkdir /usr/bin/swift
 sudo cp -R ./swift-5.4.1-RELEASE-ubuntu20.04/usr/* /usr/bin/swift
+echo "" >> ~/.bashrc
 echo 'export PATH="${PATH}":/usr/bin/swift/bin' >> ~/.bashrc
 
 # SwiftLint
@@ -58,6 +59,7 @@ unzip -n swiftlint_linux.zip
 sudo mkdir /usr/bin/swiftlint
 sudo cp ./swiftlint /usr/bin/swiftlint/
 echo 'export PATH="${PATH}":/usr/bin/swiftlint' >> ~/.bashrc
+echo "" >> ~/.bashrc
 
 # Swift syntax highlighting for Vim
 # Original Source: http://wingsquare.com/blog/swift-script-syntax-highlighting-and-indentation-for-vim-text-editor/
@@ -72,9 +74,15 @@ cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
 echo "--- Cleaning up, removing swift repo.."
 rm -rf ./swift/
 
+
 # change some BASH settings
 echo adding some BASH commands to .bashrc
-echo "PS1='$\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> ~/.bashrc
+echo "" >> ~/.bashrc
+echo "parse_git_branch() {" >> ~/.bashrc
+echo "      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'" >> ~/.bashrc
+echo "}" >> ~/.bashrc
+echo "" >> ~/.bashrc
+echo "PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ '" >> ~/.bashrc
 echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 
 # provision GitHub
