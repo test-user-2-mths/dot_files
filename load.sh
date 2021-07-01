@@ -4,7 +4,7 @@
 # chmod +x ./load.sh
 
 # then run this (so you do not have to type "yes" 3 times while it is running):
-# yes yes yes | ./load.sh
+# yes yes yes yes | ./load.sh
 
 # then at the end, reboot for everything to take effect
 # sudo reboot now
@@ -73,6 +73,11 @@ echo "--- Copying plugin to Vim bundles.."
 cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
 echo "--- Cleaning up, removing swift repo.."
 rm -rf ./swift/
+
+# update Git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
 
 # load GitHub CLI
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
