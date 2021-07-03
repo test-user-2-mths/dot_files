@@ -34,10 +34,10 @@ sudo apt install default-jdk
 # https://github.com/checkstyle/checkstyle/releases
 echo load CheckStyle
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
-sudo mkdir ~/java-style
-sudo cp ./checkstyle-8.44-all.jar ~/java-style/checkstyle.jar
+sudo mkdir ~/scripts
+sudo cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
 wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
-sudo cp ./google_checks.xml ~/java-style/
+sudo cp ./google_checks.xml ~/scripts/
 
 
 # you might need to get a newer version of swift
@@ -74,16 +74,6 @@ cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
 echo "--- Cleaning up, removing swift repo.."
 rm -rf ./swift/
 
-# update Git
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
-
-# load GitHub CLI
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-sudo apt install gh
-
 # change some BASH settings
 echo adding some BASH commands to .bashrc
 echo "" >> ~/.bashrc
@@ -93,6 +83,16 @@ echo "}" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ '" >> ~/.bashrc
 echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
+
+# update Git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+
+# load GitHub CLI
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt install gh
 
 # provision GitHub
 echo provision GitHub
