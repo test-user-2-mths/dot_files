@@ -16,6 +16,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
 # load some programs
 echo Load tree program
 sudo apt install tree
+sudo apt install unzip
 
 # load .vimrc file
 echo Load .vimrc file
