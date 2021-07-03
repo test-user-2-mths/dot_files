@@ -96,13 +96,24 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt install gh
 
-# provision GitHub
-echo provision GitHub
-ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
-eval "$(ssh-agent -s)"
 
 # remove this directory and all its files
 echo remove this directory and all its files
 sudo rm -R ~/dot_files
 cd ..
 sudo reboot now
+
+
+# on reboot, need to run the following by hand
+
+# provision GitHub
+ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
+eval "$(ssh-agent -s)"
+
+# configure GitHub CLI
+gh auth login
+# web method most likely the easiest
+# then cat the *.pub file and copy it over to GitHub SSH keys
+# might be able to use gh commands to do this?
+
+
