@@ -4,7 +4,7 @@
 # chmod +x ./load.sh
 
 # then run this (so you do not have to type "yes" 3 times while it is running):
-# yes yes yes yes | ./load.sh
+# yes yes yes | ./load.sh
 
 # then at the end, reboot for everything to take effect
 # sudo reboot now
