@@ -1,0 +1,43 @@
+#################################
+# Run Linters against code base #
+#################################
+
+name: GitHub's Super Linter
+
+on: [push, pull_request]
+
+jobs:
+  GitHub-Super-Linter:
+    name: GitHub's Super Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@master
+        
+      - name: Run GitHub Super Linter
+        uses: github/super-linter@master
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  SwiftLint--fix:
+    name: SwiftLint with --fix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: GitHub Action for SwiftLint with --fix
+        uses: norio-nomura/action-swiftlint@3.2.1
+        with:
+          args: --fix
+
+  SwiftLint--strict:
+    name: SwiftLint with --strict
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: GitHub Action for SwiftLint with --strict
+        uses: norio-nomura/action-swiftlint@3.2.1
+        with:
+          args: --strict
