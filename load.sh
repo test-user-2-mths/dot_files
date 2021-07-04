@@ -86,6 +86,7 @@ echo "PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[
 echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 
 # update Git
+echo upgrade Git
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
