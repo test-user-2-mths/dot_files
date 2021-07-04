@@ -2,7 +2,7 @@
 # Run Linters against code base #
 #################################
 
-name: GitHub's Super Linter
+name: Linter
 
 on: [push, pull_request]
 
