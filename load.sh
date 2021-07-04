@@ -101,7 +101,9 @@ sudo apt install gh
 # remove this directory and all its files
 echo remove this directory and all its files
 sudo rm -R ~/dot_files
-cd ..
+echo ---
+echo rebooting now ...
+echo ---
 sudo reboot now
 
 
