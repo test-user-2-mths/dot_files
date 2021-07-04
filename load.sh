@@ -105,7 +105,7 @@ cd ..
 sudo reboot now
 
 
-# on reboot, need to run the following by hand
+# after reboot, need to run the following by hand
 
 # provision GitHub
 ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
