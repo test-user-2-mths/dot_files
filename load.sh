@@ -98,9 +98,7 @@ sudo apt-add-repository https://cli.github.com/packages
 sudo apt install gh
 
 
-# remove this directory and all its files
-echo remove this directory and all its files
-sudo rm -R ~/dot_files
+# reboot
 echo ---
 echo rebooting now ...
 echo ---
@@ -116,7 +114,7 @@ eval "$(ssh-agent -s)"
 # configure GitHub CLI
 gh auth login
 # web method most likely the easiest
-# then cat the *.pub file and copy it over to GitHub SSH keys
-# might be able to use gh commands to do this?
+# use existing GitHub SSH keys
 
-
+# then remove the dot_files firectory 
+sudo rm -R ~/dot_files
