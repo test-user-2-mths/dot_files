@@ -119,6 +119,7 @@ ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
 eval "$(ssh-agent -s)"
 # to test it out
 ssh -T git@github.com
+git config --global --edit
 
 # configure GitHub CLI
 gh auth login
