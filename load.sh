@@ -14,13 +14,17 @@ echo Update and upgrade system
 sudo apt-get update && sudo apt-get dist-upgrade
 
 # load some programs
-echo Load tree program
+echo Load programs
 sudo apt install tree
 sudo apt install unzip
 
 # load .vimrc file
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
+
+# copy over shell script file
+echo Load shell script files
+cp ./repo.sh ~/scripts/repo.sh
 
 # load YouCompleteMe
 echo Load YouCompleteMe plugin for Vim
@@ -33,7 +37,7 @@ sudo apt install default-jdk
 
 # loading checkstyle for java
 # https://github.com/checkstyle/checkstyle/releases
-echo load CheckStyle
+echo load CheckStyle for Java
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
 sudo mkdir ~/scripts
 sudo cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
@@ -54,7 +58,7 @@ echo 'export PATH="${PATH}":/usr/bin/swift/bin' >> ~/.bashrc
 
 # SwiftLint
 # https://github.com/realm/SwiftLint/releases
-echo load SwiftLint
+echo load SwiftLint for Swift
 wget https://github.com/realm/SwiftLint/releases/download/0.43.1/swiftlint_linux.zip
 unzip -n swiftlint_linux.zip
 sudo mkdir /usr/bin/swiftlint
