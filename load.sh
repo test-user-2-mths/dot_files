@@ -27,8 +27,8 @@ echo Load shell script files
 mkdir ~/scripts
 cp ./repo.sh ~/scripts/repo.sh
 sudo chmod +x ~/scripts/repo.sh
-cp ./main.yml ~scripts/main.yml
-cp ./swift.yml ~scripts/swift.yml
+cp ./main.yml ~/scripts/main.yml
+cp ./swift.yml ~/scripts/swift.yml
 
 # load YouCompleteMe
 echo Load YouCompleteMe plugin for Vim
