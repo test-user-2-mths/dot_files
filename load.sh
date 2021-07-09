@@ -27,6 +27,8 @@ echo Load shell script files
 mkdir ~/scripts
 cp ./repo.sh ~/scripts/repo.sh
 sudo chmod +x ~/scripts/repo.sh
+cp ./repo.sh ~/scripts/git-push.sh
+sudo chmod +x ~/scripts/git-push.sh
 cp ./java-lint.sh ~/scripts/java-lint.sh
 sudo chmod +x ~/scripts/java-lint.sh
 cp ./main.yml ~/scripts/main.yml
