@@ -117,6 +117,8 @@ sudo reboot now
 # provision GitHub
 ssh-keygen -t ed25519 -C "mr.coxall@mths.ca"
 eval "$(ssh-agent -s)"
+# then copy public key over to GitHub SSH keys
+cat id_ ...
 # to test it out
 ssh -T git@github.com
 git config --global --edit
