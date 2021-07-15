@@ -48,8 +48,8 @@ sudo apt install default-jdk
 echo load CheckStyle for Java
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
 cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
-wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
-cp ./google_checks.xml ~/scripts/
+wget https://raw.githubusercontent.com/github/super-linter/master/.github/linters/sun_checks.xml
+cp ./sun_checks.xml ~/scripts/
 
 
 # you might need to get a newer version of swift
