@@ -76,9 +76,11 @@
   </module>
 
   <!-- Javadoc Comments -->
+<!--
   <module name="JavadocPackage">
     <property name="allowLegacy" value="false"/>
   </module>
+-->
 
   <!-- Miscellaneous -->
   <module name="NewlineAtEndOfFile"/>
