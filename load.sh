@@ -34,26 +34,25 @@ cp ./swift.yml ~/scripts/swift.yml
 
 # load YouCompleteMe
 echo Load YouCompleteMe plugin for Vim
-sudo apt install vim-youcompleteme
+sudo apt install vim-youcompleteme -y
 vim-addon-manager install youcompleteme
 
 # load java programming software
 echo load Java
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 
 # loading checkstyle for java
 # https://github.com/checkstyle/checkstyle/releases
 echo load CheckStyle for Java
 wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.44/checkstyle-8.44-all.jar
 cp ./checkstyle-8.44-all.jar ~/scripts/checkstyle.jar
-wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
 cp ./mr-coxall_checks.xml ~/scripts/
 
 
 # you might need to get a newer version of swift
 # https://swift.org/download/
 echo load Swift
-sudo apt-get install -y clang libblocksruntime0 libcurl4-openssl-dev
+sudo apt-get install -y clang libblocksruntime0 libcurl4-openssl-dev -y
 wget https://swift.org/builds/swift-5.4.1-release/ubuntu2004/swift-5.4.1-RELEASE/swift-5.4.1-RELEASE-ubuntu20.04.tar.gz
 tar -zxvf swift-5.4.1-RELEASE-ubuntu20.04.tar.gz
 sudo mkdir /usr/bin/swift
@@ -98,7 +97,7 @@ echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 echo upgrade Git
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
-sudo apt-get install git
+sudo apt-get install git -y
 
 # load GitHub CLI
 echo load GitHub CLI
