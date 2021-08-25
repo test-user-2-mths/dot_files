@@ -14,7 +14,7 @@ set textwidth=79        " so you do not go over 80 character max
 set wrap                " wrap lines
 set scrolloff=5         " show 5 lines above and below cursor
 syntax on               " turn on syntax highlighting
-colorscheme darkblue    " set the color scheme
+colorscheme koehler     " set the color scheme
 
 " Tab configuration
 set tabstop=4           " set tabs to 4 spaces
