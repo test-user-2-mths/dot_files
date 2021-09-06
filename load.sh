@@ -101,6 +101,7 @@ echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 echo List helper commands
 echo ""
 echo "# some more ls aliases"
+echo "alias ls='ls --color=auto'" >> ~/.bashrc
 echo "alias ll='ls -alF'" >> ~/.bashrc
 echo "alias la='ls -A'" >> ~/.bashrc
 echo "alias l='ls -CF'" >> ~/.bashrc
