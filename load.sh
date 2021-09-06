@@ -101,9 +101,9 @@ echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 echo List helper commands
 echo ""
 echo "# some more ls aliases"
-echo "alias ll='ls -alF'"
-echo "alias la='ls -A'"
-echo "alias l='ls -CF'"
+echo "alias ll='ls -alF'" >> ~/.bashrc
+echo "alias la='ls -A'" >> ~/.bashrc
+echo "alias l='ls -CF'" >> ~/.bashrc
 
 # update Git
 echo upgrade Git
