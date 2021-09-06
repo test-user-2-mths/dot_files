@@ -6,6 +6,9 @@
 # then at the end, reboot for everything to take effect
 # sudo reboot now
 
+# I do not like the .bashrc file provided by AWS Ubuntu Cloud9 instance, so I am removing all the lines
+> ~/.bashrc
+
 # update and upgrade system
 echo Update and upgrade system
 sudo apt-get update -y
