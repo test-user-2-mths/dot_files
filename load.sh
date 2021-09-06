@@ -95,6 +95,13 @@ echo "" >> ~/.bashrc
 echo "PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ '" >> ~/.bashrc
 echo "PROMPT_DIRTRIM=1" >> ~/.bashrc
 
+echo List helper commands
+echo ""
+echo "# some more ls aliases"
+echo "alias ll='ls -alF'"
+echo "alias la='ls -A'"
+echo "alias l='ls -CF'"
+
 # update Git
 echo upgrade Git
 sudo add-apt-repository ppa:git-core/ppa
