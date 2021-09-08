@@ -97,7 +97,7 @@ cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
 
 # update Git
 echo upgrade Git
-sudo add-apt-repository ppa:git-core/ppa
+sudo add-apt-repository ppa:git-core/ppa -y
 sudo apt-get update
 sudo apt-get install git -y
 
