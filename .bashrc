@@ -1,8 +1,5 @@
 # .bashrc file
 
-export PATH="${PATH}":/usr/bin/swift/bin
-export PATH="${PATH}":/usr/bin/swiftlint
-
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
