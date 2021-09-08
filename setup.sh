@@ -26,6 +26,10 @@ cp ./.vimrc ~/.vimrc
 echo Load .bashrc file
 cp ./.bashrc ~/.bashrc
 
+# load .gitconfig file
+echo Load .gitconfig file
+cp ./.gitconfig ~/.gitconfig
+
 # copy over shell script file
 echo Load shell script files
 mkdir ~/scripts
@@ -120,7 +124,6 @@ eval "$(ssh-agent -s)"
 cat ~/.ssh/id_ ... .pub
 # to test it out
 ssh -T git@github.com
-git config --global --edit
 
 # configure GitHub CLI
 gh auth login
