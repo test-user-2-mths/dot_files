@@ -6,8 +6,7 @@
 # then at the end, reboot for everything to take effect
 # sudo reboot now
 
-# I do not like the .bashrc file provided by AWS Ubuntu Cloud9 instance, so I am removing all the lines
-> ~/.bashrc
+
 
 # update and upgrade system
 echo Update and upgrade system
@@ -22,6 +21,10 @@ sudo apt install unzip
 # load .vimrc file
 echo Load .vimrc file
 cp ./.vimrc ~/.vimrc
+
+# load .bashrc file
+echo Load .bashrc file
+cp ./.bashrc ~/.bashrc
 
 # copy over shell script file
 echo Load shell script files
