@@ -65,10 +65,10 @@ cp ./mr-coxall_checks.xml ~/scripts/
 # https://swift.org/download/
 echo load Swift
 sudo apt-get install -y clang libblocksruntime0 libcurl4-openssl-dev -y
-wget https://swift.org/builds/swift-5.4.2-release/ubuntu1804/swift-5.4.2-RELEASE/swift-5.4.2-RELEASE-ubuntu18.04.tar.gz
-tar -zxvf swift-5.4.2-RELEASE-ubuntu18.04.tar.gz
+wget https://swift.org/builds/swift-5.4.2-release/ubuntu2004/swift-5.4.2-RELEASE/swift-5.4.2-RELEASE-ubuntu20.04.tar.gz
+tar -zxvf swift-5.4.2-RELEASE-ubuntu20.04.tar.gz
 sudo mkdir /usr/bin/swift
-sudo cp -R ./swift-5.4.2-RELEASE-ubuntu18.04/usr/* /usr/bin/swift
+sudo cp -R ./swift-5.4.2-RELEASE-ubuntu20.04/usr/* /usr/bin/swift
 echo "" >> ~/.bashrc
 echo 'export PATH="${PATH}":/usr/bin/swift/bin' >> ~/.bashrc
 
