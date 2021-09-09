@@ -26,7 +26,7 @@ cp ./.vimrc ~/.vimrc
 # load .bashrc file
 echo Load .bashrc file
 cp ./.bashrc ~/.bashrc
-dircolors -b >> .bashrc
+# dircolors -b >> .bashrc
 
 # load .gitconfig file
 echo Load .gitconfig file
