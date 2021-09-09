@@ -17,6 +17,7 @@ sudo apt-get dist-upgrade -y
 echo Load programs
 sudo apt install tree
 sudo apt install unzip
+sudo apt-get -y install python3-pip
 
 # load .vimrc file
 echo Load .vimrc file
@@ -94,12 +95,6 @@ echo "--- Copying plugin to Vim bundles.."
 cp -r ./swift/utils/vim ~/.vim/pack/bundle/start/swift
 # echo "--- Cleaning up, removing swift repo.."
 # rm -rf ./swift/
-
-# update Git
-echo upgrade Git
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo apt-get update
-sudo apt-get install git -y
 
 # load GitHub CLI
 echo load GitHub CLI
