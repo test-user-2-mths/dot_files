@@ -105,7 +105,7 @@ sudo apt install gh
 
 
 # reboot
-sudo source ~/.bashrc
+source ~/.bashrc
 echo ---
 echo rebooting now ...
 echo ---
